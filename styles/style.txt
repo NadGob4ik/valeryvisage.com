@@ -1,0 +1,55 @@
+ body {
+      margin: 0;
+    }
+    header {
+      height: 931px; /* Высота секции 700 пикселей */
+      background: url('img/header.png') no-repeat center center; /* Путь к вашему изображению */
+      background-size: cover;
+      position: relative;
+    }
+
+    .navbar-custom {
+      background-color: rgba(0, 0, 0, 0.8); /* Черный полупрозрачный фон */
+    }
+    .navbar-custom .navbar-brand {
+      color: white; /* Белый текст для логотипа */
+      margin-right: 50px; /* Отступ справа от логотипа */
+      font-size: 1.5rem; /* Увеличенный размер шрифта логотипа */
+      margin-left: -25px; /* Сдвиг логотипа влево на 25 пикселей */
+    }
+    .navbar-custom .nav-link {
+      color: white; /* Белый текст для навигационных ссылок */
+    }
+    .navbar-custom .btn {
+      background-color: white; /* Белый фон для кнопок */
+      color: purple; /* Фиолетовый текст */
+      border-radius: 35px; /* Радиус кнопок */
+      border: none; /* Убираем границу */
+      margin-left: 10px; /* Отступ между кнопками */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень для кнопок */
+      transition: transform 0.2s, box-shadow 0.2s; /* Плавные переходы */
+    }
+
+    .navbar-collapse {
+      justify-content: space-between; /* Распределение пространства между элементами */
+    }
+    .navbar-nav {
+      flex-grow: 1; /* Расширение меню навигации */
+      justify-content: center; /* Центровка элементов меню */
+    }
+    .navbar-toggler {
+      border-color: rgba(255, 255, 255, 0.1); /* Уменьшение видимости иконки гамбургера */
+    }
+    
+    .content {
+      transition: margin-top 0.3s; /* Плавный переход отступа */
+    }
+    @media (max-width: 767.98px) {
+      .navbar-custom .btn {
+        width: 100%; /* Кнопки занимают всю ширину на мобильных устройствах */
+        margin: 10px 0; /* Отступы сверху и снизу */
+      }
+      .navbar-collapse {
+        text-align: center; /* Центровка кнопок на мобильных устройствах */
+      }
+    }
