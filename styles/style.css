@@ -215,20 +215,15 @@ header {
 }
 
 /* Стили для мобильных устройств */
-@media (max-width: 374.98px) {
-  .pronas-section .row {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-  }
+@media (max-width: 767.98px) {
   .pronas-section img {
-    width: 90%; /* Ширина зображення */
-    height: 80%; /* Автоматична висота */
-    margin-bottom: 20px; /* Отступ снизу для изображений */
-    object-fit: cover;
+    width: 100%; /* Занимать всю доступную ширину */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    max-width: none; /* Убедитесь, что нет максимальной ширины */
+    max-height: none; /* Убедитесь, что нет максимальной высоты */
   }
- 
 }
+
 
 /* Стилі секції "Послуги та ціни" */
 /* Стилі секції "Послуги та ціни" */
