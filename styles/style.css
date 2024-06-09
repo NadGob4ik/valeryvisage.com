@@ -208,42 +208,26 @@ header {
   color: #474747; /* Темний текст */
 }
 .pronas-section img {
-  width: auto; /* Ширина зображення */
-  height: 90%; /* Автоматична висота */
+  width: 90%; /* Ширина зображення */
+  height: 80%; /* Автоматична висота */
   margin-bottom: 20px; /* Отступ снизу для изображений */
+  object-fit: cover;
 }
-/* Отступы между изображениями и текстом */
-.pronas-section .col-lg-6 {
-}
+
 /* Стили для мобильных устройств */
 @media (max-width: 374.98px) {
   .pronas-section .row {
     display: flex;
     flex-direction: column;
+    height: auto;
   }
-  .pronas-section .col-lg-6 {
-    order: 1; /* Сначала текст */
-    margin-bottom: 20px; /* Отступ снизу для текста */
+  .pronas-section img {
+    width: 90%; /* Ширина зображення */
+    height: 80%; /* Автоматична висота */
+    margin-bottom: 20px; /* Отступ снизу для изображений */
+    object-fit: cover;
   }
-  .pronas-section .photo-pronas {
-    order: 2; /* Затем фото */
-    margin-bottom: 20px; /* Отступ снизу для фото */
-  }
-  .pronas-section .photo-pronas + .col-lg-6 {
-    order: 3; /* Затем текст */
-    margin-bottom: 20px; /* Отступ снизу для текста */
-  }
-  .pronas-section .photo-pronas + .col-lg-6 + .col-lg-6 {
-    order: 4; /* Затем фото */
-    margin-bottom: 20px; /* Отступ снизу для фото */
-  }
-  .pronas-section .photo-pronas + .col-lg-6 + .col-lg-6 + .col-lg-6 {
-    order: 5; /* Затем текст */
-    margin-bottom: 20px; /* Отступ снизу для текста */
-  }
-  .pronas-section .photo-pronas + .col-lg-6 + .col-lg-6 + .col-lg-6 + .col-lg-6 {
-    order: 6; /* Затем фото */
-  }
+ 
 }
 
 /* Стилі секції "Послуги та ціни" */
