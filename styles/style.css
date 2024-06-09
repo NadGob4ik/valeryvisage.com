@@ -214,10 +214,9 @@ header {
 }
 /* Отступы между изображениями и текстом */
 .pronas-section .col-lg-6 {
-  margin-bottom: 40px; /* Отступ снизу для текстовых блоков */
 }
 /* Стили для мобильных устройств */
-@media (max-width: 767.98px) {
+@media (max-width: 374.98px) {
   .pronas-section .row {
     display: flex;
     flex-direction: column;
@@ -464,7 +463,6 @@ header {
     font-size: 14px; /* Розмір шрифту для мобільних пристроїв */
   }
   .photogallery img {
-    margin-bottom: 20px; /* Відступ знизу для мобільних пристроїв */
     width: 100%;
   }
 }
